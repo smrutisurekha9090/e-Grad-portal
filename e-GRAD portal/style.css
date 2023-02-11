@@ -1,0 +1,622 @@
+/* navbar start */
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Pacifico&family=Poppins:wght@200;300&display=swap'); */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+   
+   
+    /* margin-left: 1%;
+    margin-right: 100px;
+    margin-top: 1%;  */
+   
+}
+
+
+
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(18, 10, 10, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-size: cover; */
+    
+
+}
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size:5.938rem ;
+    color: #dc0000;
+    margin-bottom:3.125rem;
+    transition: 0.5s;
+}
+.container h1:hover{
+    -webkit-text-stroke: 0.125rem #fff;
+    color: transparent;
+}
+.content a{
+    font-size: 1.438rem;
+    color: rgb(222, 40, 8);
+    text-decoration: none;
+    border: 0.125rem solid rgb(55, 106, 151);
+    padding: 0.938rem 1.563rem;
+    border-radius: 3.125rem;
+    transition: 0.3s;
+
+}
+.content a:hover{
+    background-color: rgb(208, 208, 208);
+    color: black;
+}
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+   
+
+}
+@media (min-aspect-ratio:16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+@media (max-aspect-ratio: 767px){
+    .background-clip{
+        display: none;
+    }
+    body{
+        background-size: cover;
+    }
+}
+
+nav{
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    padding: 2.5rem 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+nav .logo{
+    width: 5rem;
+    margin-left: 2.8125rem;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 0.939rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #f71717;
+    font-size: 1.438rem;
+    border: 0.125rem solid rgb(55, 106, 151);
+    border-radius: 3.125rem;
+    padding: 0.063rem 0.063rem;
+}
+
+
+.text-vc{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 5em;
+    color: #e63e10;
+    background: #14373a;
+    color: transparent;
+    -webkit-text-stroke: 0.188rem rgb(218, 28, 28);
+    margin-left: auto;
+}
+
+
+/* 
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* color: #205295; */
+    /* background-color: #f4f4f4; */
+/* } */
+
+/* nav{
+    background-color:  #212020;
+    height: 80px;
+    width: 100%;
+   
+
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+   
+
+} */
+/* nav ul{
+    float: right;
+    margin-right: 55px;
+}
+
+
+
+nav ul li a{
+    color: rgb(248, 88, 13);
+    text-decoration: none;
+    font-size: 22px; */
+    /* font-family: cursive; */
+    /* font-family: 'Arvo', serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+    padding: 7px 13px;
+   
+  
+   
+}
+ */
+
+
+
+/* 
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: cursive;
+}  */
+
+.checkButton{
+    font-size: 1.875rem;
+    color: white;
+    float: right;
+    line-height: 5rem;
+    margin-right: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.myCheckBox{
+    display: none;
+}
+
+/* a:hover,a.active{
+    color: #f7f7f7;
+}
+
+@media screen and (max-width:952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:858px) {
+    .checkButton{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(239, 232, 233);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        color: black;
+    }
+
+    a:hover,a.active{
+        color: #e60064;
+    }
+
+    .myCheckBox:checked ~ ul{
+        left: 0;
+    }
+} */
+
+/* navbar end */
+
+.container-x{
+    margin-top: 6.25rem;
+    margin-left: 17%;
+    /* margin-right: 9px; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 0.188rem solid black;
+    width:62.438rem;
+    word-wrap: break-word;
+    /* height: 500px; */
+ 
+    
+}
+.parg {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 1%;
+    margin-right: 3%;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'poppins',sans-serif;
+ 
+    word-wrap: break-word;
+    
+
+}
+.container-s{
+    margin-top: 8%;
+    
+}
+.inner{
+    overflow :hidden;
+}
+.inner img{
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.inner:hover img{
+    transform: scale(0.5);
+}
+.container-s1{
+    margin-top :7%;
+
+}
+.container-s2{
+    margin-top :6%;
+    
+}
+.section{
+    position: relative;
+    width:100%;
+    padding: 3.125rem;
+
+}
+.circle{
+    position: relative;
+    overflow: hidden;
+}
+.circle img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.circle.circle1
+{
+    width: 25rem;
+    height: 25rem;
+    float: left;
+    border-radius: 50%;
+    margin: 1.25rem;
+    shape-outside: circle();
+}
+.circle.circle2
+{
+    width: 12.5rem;
+    height: 12.5rem;
+    float: right;
+    border-radius: 50%;
+    margin: 1.25rem;
+    shape-outside: circle();
+  
+}
+
+section h2{
+    font-size: 2em;
+    margin-bottom: 0.625rem;
+
+}
+
+.footer{
+    width: 100%;
+    position:absolute;
+    background: linear-gradient(to right, #c2c6df, #cd5d37);
+    color: #fff;
+    padding: 6.25rem 0 1.875rem;
+    border-top-left-radius:7.813rem;
+    font-size :0.813rem;
+    line-height:1.875rem;
+    overflow: hidden;
+}
+.row{
+    width:85%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.col{
+    flex-basis:25%;
+    padding:0.625rem;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+.email-id{
+    width:fit-content;
+    border-bottom: 0.063rem solid #cd5d37;
+    margin:1.25rem 0;
+    
+}
+ul li a{
+     text-decoration: none;
+     color: #213529;
+}
+form{
+    padding-bottom: 0.938rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.063rem solid #cd5d37;
+    margin-bottom: 3.125rem;
+}
+form .far{
+    font-size: 1.125rem;
+    margin-right: transparent;
+}
+form input{
+    width:100%;
+    background: transparent;
+    color: #cd5d37;
+    border:0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form button .fas{
+    font-size: 1rem;
+    color: #cd5d37;
+}
+
+.social-icons .fa-brands{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+    color: #000;
+    background: #fff;
+    margin-right: 0.938rem;
+    cursor: pointer;
+}
+
+.fa-brands{
+    transition: 0.2s;
+}
+.fa-brands:hover{
+    transform:scale(0.5) ;
+    background-color: rgb(181, 69, 69);
+}
+
+.img-logo{
+   
+    padding-left: 2.5rem;
+    margin-bottom: 1.563rem;
+    height: 3.75rem;
+    
+}
+
+.logo{
+    text-align: 3.125rem;
+    font-size: large;
+
+}
+
+.carousel {
+    margin-top: 6.25rem;
+    /* margin-left: 50%;
+    margin-right: 9%; */
+    
+}
+.text-z{
+    text-align: center;
+    margin-top: 6.25rem;
+}
+
+/* box */
+
+.my-box{
+    display: flex;
+    width: 100%;
+    padding-left:2.5rem ;
+    padding-right:2.5rem ;
+} 
+.box{
+    position: relative;
+    width: 31.25rem;
+    height: 25rem;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: 3.125rem;
+    border-radius: 1.875rem;
+    margin-bottom: 5rem;
+    
+    
+
+}
+
+
+.box::after{
+    content: "" ;
+    position: absolute;
+    width: 31.25rem;
+    height: 31.25rem;
+    background-image: conic-gradient(transparent,
+    transparent,transparent,#e3f310);
+    animation: animate 4s linear infinite;
+    animation-delay:-2s ;
+    
+}
+.box::before{
+    content: "" ;
+    position: absolute;
+    width: 31.25rem;
+    height: 31.25rem;
+    background-image: conic-gradient(transparent,
+    transparent,transparent,#ff2600);
+    animation: animate 4s linear infinite;
+    
+}
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.box span{
+    position: absolute;
+    inset:0.375rem;
+    border-radius: 0.75rem;
+    background:rgb(250, 250, 250) ;
+    z-index: 1;
+}
+.text-o{
+    margin-top:3.125rem ;
+    margin-left:1.875rem;
+    text-transform: capitalize;
+}
+.but-on{
+    border: 0.125rem solid rgb(55, 106, 151);
+    padding: 0.938rem 1.563rem;
+  
+    border-radius: 3.125rem;
+    margin-top: 3.125rem;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.but-on:hover{
+    background-color: #99be5d;
+    transform: scale(0.6);
+    /* color: white; */
+    color: rgb(1, 1, 14);
+}
+.sent{
+    margin-left: 0.625rem;
+}
+.word-i{
+    width: 100%;
+    padding-left:2.5rem ;
+    padding-right:2.5rem ;
+    display: flex;
+    margin-top: 3.438rem;
+    text-align: center;
+    
+    
+}
+
+/* @viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom:1.0;
+} */
+
+@media (max-width:768px) {
+    .container-x{
+        display: block;
+        height: 70vh;
+    }
+    .text-vc{
+        float: left;
+       
+    }
+    .parg{
+        margin-left: 15%;
+    }
+    .word-i{
+       display: block;
+        
+    }
+    .box{
+        display: block;
+    }
+    /* .container{
+        display: block;
+    } */
+    nav{
+        display: block;
+    }
+    /* .background-clip{
+        position: absolute;
+    } */
+    .col{
+        overflow: hidden;
+    }
+ 
+    
+   
+    
+}
